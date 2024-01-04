@@ -1,5 +1,6 @@
 body {
-  background-color: #eee;
+  background: rgb(224, 118, 164);
+  background: radial-gradient(circle, rgb(226, 103, 156) 0%, rgb(108, 151, 199) 100%);
   display: flex;
   font-family: 'Muli', sans-serif;
 }
@@ -8,21 +9,27 @@ body {
   margin: 20px;
   display: inline-block;
   padding: 40px;
-  border: 1px solid #ddd;
-  background-color: #fff;
+  background: rgba(255, 255, 255, 0.25);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(4.9px);
+  -webkit-backdrop-filter: blur(4.9px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 h1 {
+  text-align: center;
   margin: 10px;
   padding: 10px;
-  border-bottom: 1px solid #eee;
+  color: white;
 }
 
 label {
+  text-align: center;
   display: flex;
   flex-direction: column;
   text-transform: uppercase;
-  color: #aaa;
+  color: white;
   margin: 20px;
 }
 
@@ -32,7 +39,7 @@ input[type="text"] {
 }
 
 .button {
-  background-color: #f58427;
+  background-color: #d85d92;
   color: white;
   text-align: center;
   font-weight: bold;
