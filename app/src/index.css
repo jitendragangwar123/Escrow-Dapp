@@ -1,4 +1,7 @@
 body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background: rgb(224, 118, 164);
   background: radial-gradient(circle, rgb(226, 103, 156) 0%, rgb(108, 151, 199) 100%);
   display: flex;
@@ -8,13 +11,25 @@ body {
 .contract, .existing-contracts {
   margin: 20px;
   display: inline-block;
-  padding: 40px;
+  padding: 20px;
   background: rgba(255, 255, 255, 0.25);
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(4.9px);
   -webkit-backdrop-filter: blur(4.9px);
   border: 1px solid rgba(255, 255, 255, 0.2);
+}
+.container{
+  margin: 20px auto;
+  display: block; 
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.25);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(4.9px);
+  -webkit-backdrop-filter: blur(4.9px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  text-align: center;
 }
 
 h1 {

@@ -31,6 +31,7 @@ function App() {
     const arbiter = document.getElementById('arbiter').value;
     const value = ethers.BigNumber.from(document.getElementById('wei').value);
     const escrowContract = await deploy(signer, arbiter, beneficiary, value);
+    //console.log("address:",escrowContract.address);
 
 
     const escrow = {
@@ -55,6 +56,10 @@ function App() {
 
   return (
     <>
+    <div class="container">
+    <h1 className="text-4xl font-extrabold text-white">
+        Welcome To The Platform
+      </h1>
       <div className="contract">
         <h1> New Contract </h1>
         <label>
@@ -93,6 +98,7 @@ function App() {
             return <Escrow key={escrow.address} {...escrow} />;
           })}
         </div>
+      </div>
       </div>
     </>
   );
